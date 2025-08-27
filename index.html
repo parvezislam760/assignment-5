@@ -21,15 +21,17 @@
          </div>
          <!-- right logo -->
           <div class="flex items-center space-x-4">
-            <div class="flex items-center space-x-1 cursor-pointer bg-[#41FF6B] px-3 rounded-2xl">
+            <div class="flex items-center space-x-1 cursor-pointer bg-green-100 px-6 py-1 rounded-full">
                 <span>0</span>
                 <img src="./assets/heart.png" class="h-[30px] w-[30px]" alt="">
             </div>
-            <div class="flex items-center space-x-1 cursor-pointer">
+            <div class="flex items-center space-x-1 cursor-pointer bg-green-100 px-6 py-1 rounded-full">
                 <span>100</span>
                 <img src="./assets/coin.png" class="h-[30px] w-[30px]" alt="">
             </div>
-            <div class="bg-[#00A63E] px-4 py-1 space-x-1 cursor-pointer rounded-2xl text-white">2 <span class="text-xl">copy</span></div>
+            <div class="bg-[#00A63E] px-8 py-2 space-x-1 cursor-pointer rounded-full text-white">
+                <button>2 Copy</button>
+            </div>
           </div>
     </nav>
     <div class="bg-gradient-to-r from-green-950 via-green-900 to-green-950 text-center py-20 text-white">
@@ -37,9 +39,10 @@
         <h1 class="text-4xl font-bold mb-4">Emergency Service Directory</h1>
         <p class="text-xl">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
     </div>
-
     <!-- main section -->
-     <div class="bg-green-50 p-4 grid md:grid-cols-3 gap-6">
+     <section class="flex justify-between items-center mb-2 bg-green-50 p-4">
+        <!-- car section -->
+     <div class=" p-4 grid md:grid-cols-3 gap-6">
         <div class="bg-white shadow rounded p-4 flex flex-col justify-between max-w-[436px]">
             <div>
                 <div class="flex justify-between items-center mb-2">
@@ -194,5 +197,14 @@
             </div>
         </div>
      </div>
+     <!-- history Section -->
+      <div class="bg-white w-[400px] h-[840px] p-4 mt-6">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="font-bold text-lg flex items-center space-x-2 gap-1"><i class="fa-regular fa-clock"></i>Call History</h2>
+            <button class="bg-[#00A63E] text-white px-9 py-1 rounded-full">Clear</button>
+        </div>
+      </div>
+      <ul class="space-y-2"></ul>
+    </section>
 </body>
 </html>
