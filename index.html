@@ -22,16 +22,14 @@
          <!-- right logo -->
           <div class="flex items-center space-x-4">
             <div class="flex items-center space-x-1 cursor-pointer bg-green-100 px-6 py-1 rounded-full">
-                <span>0</span>
+                <span id="heartCount">0</span>
                 <img src="./assets/heart.png" class="h-[30px] w-[30px]" alt="">
             </div>
             <div class="flex items-center space-x-1 cursor-pointer bg-green-100 px-6 py-1 rounded-full">
-                <span>100</span>
+                <span id="coinCount">100</span>
                 <img src="./assets/coin.png" class="h-[30px] w-[30px]" alt="">
             </div>
-            <div class="bg-[#00A63E] px-8 py-2 space-x-1 cursor-pointer rounded-full text-white">
-                <button>2 Copy</button>
-            </div>
+            <div class="bg-[#00A63E] px-8 py-2 space-x-1 cursor-pointer rounded-full text-white"><span id="copyCount">0</span> Copy</div>
           </div>
     </nav>
     <div class="bg-gradient-to-r from-green-950 via-green-900 to-green-950 text-center py-20 text-white">
@@ -198,7 +196,7 @@
         </div>
      </div>
      <!-- history Section -->
-      <div class="bg-white w-[400px] h-[840px] p-4 mt-6">
+      <div class="bg-white w-[400px] min-h-[840px] p-4 mt-6">
         <div class="flex justify-between items-center mb-4">
             <h2 class="font-bold text-lg flex items-center space-x-2 gap-1"><i class="fa-regular fa-clock"></i>Call History</h2>
             <button class="bg-[#00A63E] text-white px-9 py-1 rounded-full">Clear</button>
@@ -206,5 +204,8 @@
       </div>
       <ul class="space-y-2"></ul>
     </section>
+
+    <!-- js script -->
+     <script src="./script.js"></script>
 </body>
 </html>
