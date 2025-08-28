@@ -41,8 +41,8 @@
       return;
     }
 
-    const servieName = card.querySelector("[data-role='service-name']").textContent;
-    const servieNumber = card.querySelector("[data-role='service-number']").textContent;
+    const serviceName = card.querySelector("[data-role='service-name']").textContent;
+    const serviceNumber = card.querySelector("[data-role='service-number']").textContent;
 
     if (coinCount < 20) {
       alert("আপনার কাছে পর্যাপ্ত কয়েন নেই। কল করা যাবে না।");
@@ -52,15 +52,20 @@
     coinCount -= 20;
     coinDisplay.textContent = coinCount;
 
-    const time = new Date().toLocaleTimeString('bn-BD', {
+    const time = new Date().toLocaleTimeString('en-US', {
       hour: "2-digit",
       minute: "2-digit",
-      second: "2-digit"
+      second: "2-digit",
+      hour12: true
     });
 
     const li = document.createElement("li");
-    li.className = "bg-green-100 p-2";
-    
+    li.className = "bg-green-100 p-2 flex justify-between";
+    li.innerHTML =
+    `<div>
+    <strong>${serviceName}</strong><br>${serviceNumber}
+    </div>
+    <div>${time}</div>`;
     historyList.appendChild(li);
     });
   });
