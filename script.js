@@ -31,3 +31,38 @@
       });
     });
   });
+
+  // Call button functionality
+  document.querySelectorAll("[data-action='call']").forEach(callBtn => {
+  callBtn.addEventListener("click", () => {
+    const card = callBtn.closest(".servie-card");
+    if (!card) {
+      console.error("Card পাওয়া যায়নি!");
+      return;
+    }
+
+    const servieName = card.querySelector("[data-role='service-name']").textContent;
+    const servieNumber = card.querySelector("[data-role='service-number']").textContent;
+
+    if (coinCount < 20) {
+      alert("আপনার কাছে পর্যাপ্ত কয়েন নেই। কল করা যাবে না।");
+      return;
+    }
+
+    coinCount -= 20;
+    coinDisplay.textContent = coinCount;
+
+    const time = new Date().toLocaleTimeString('bn-BD', {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit"
+    });
+
+    const li = document.createElement("li");
+    li.className = "bg-green-100 p-2";
+    
+    historyList.appendChild(li);
+    });
+  });
+
+  
