@@ -65,4 +65,7 @@
     });
   });
 
-  
+  //   Clear History
+  clearHistoryBtn.addEventListener("click",() => {
+    historyList.innerHTML="";
+  });
