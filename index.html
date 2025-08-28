@@ -13,23 +13,23 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="flex justify-between items-center p-4 bg-white shadow-md">
+    <nav class="flex flex-col sm:flex-row justify-between items-center p-4 bg-white shadow-md">
         <!-- left logo -->
-         <div class="flex items-center space-x-2">
+         <div class="flex items-center space-x-2 mb-2 sm:mb-0">
             <img src="./assets/logo.png" class="h-8 w-8" alt="">
             <span class="font-bold text-lg text-[#006747]">Emergency Service</span>
          </div>
          <!-- right logo -->
-          <div class="flex items-center space-x-4">
-            <div class="flex items-center space-x-1 cursor-pointer bg-green-100 px-6 py-1 rounded-full">
+          <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 w-full sm:w-auto">
+            <div class="flex items-center space-x-1 cursor-pointer bg-green-100 px-6 py-1 rounded-full w-full sm:w-auto">
                 <span id="heartCount">0</span>
-                <img src="./assets/heart.png" class="h-[30px] w-[30px]" alt="">
+                <img src="./assets/heart.png" class="h-[25px] w-[25px]" alt="">
             </div>
-            <div class="flex items-center space-x-1 cursor-pointer bg-green-100 px-6 py-1 rounded-full">
+            <div class="flex items-center space-x-1 cursor-pointer bg-green-100 px-6 py-1 rounded-full w-full sm:w-auto">
                 <span id="coinCount">100</span>
-                <img src="./assets/coin.png" class="h-[30px] w-[30px]" alt="">
+                <img src="./assets/coin.png" class="h-[25px] w-[25px]" alt="">
             </div>
-            <div class="bg-[#00A63E] px-8 py-2 space-x-1 cursor-pointer rounded-full text-white">
+            <div class="bg-[#00A63E] px-8 py-2 space-x-1 cursor-pointer rounded-full text-white w-full sm:w-auto">
                 <span id="copyCount">0</span> Copy</div>
           </div>
     </nav>
