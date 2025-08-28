@@ -1,11 +1,19 @@
-let coins = 100;
+// Initial counts
 let heartCount = 0;
+let coinCount = 100;
 let copyCount = 0;
 
-document.querySelectorAll('.heart').forEach((heart) => {
-    heart.addEventListener('click',() => {
-        heartCount++;
+// DOM elements
+const heartDisplay = document.getElementById("heartCount");
+const coinDisplay = document.getElementById("coinCount");
+const copyDisplay = document.getElementById("copyCount");
+const historyList = document.getElementById("historyList");
+const clearHistoryBtn = document.getElementById("clearHistory");
 
-        document.getElementById('heartCount').innerText = heartCount;
-    });
+// Heart icon functionality
+document.querySelectorAll("[data-action='heart']").forEach(heart => {
+  heart.addEventListener("click", () => {
+    heartCount++;
+    heartDisplay.textContent = heartCount;
+  });
 });
