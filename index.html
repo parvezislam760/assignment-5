@@ -42,15 +42,15 @@
      <section class="flex flex-col md:flex-row gap-6 justify-between items-center  bg-green-50 p-4">
         <!-- car section -->
      <div class=" p-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
-        <div class="bg-white shadow rounded p-4 flex flex-col justify-between">
+        <div class="servie-card bg-white shadow rounded p-4 flex flex-col justify-between">
             <div>
                 <div class="flex justify-between items-center mb-2">
                     <img src="./assets/emergency.png" class="h-12 w-12 mb-2 bg-[#FFE3E2] p-3 rounded-xl" alt="">
                 <span data-action="heart" class="cursor-pointer"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <h2 class="font-bold">National Emergency Number</h2>
+                <h2 data-role="service-name" class="font-bold">National Emergency Number</h2>
                 <p class="text-sm text-[#5C5C5C]">National Emergency</p>
-                <p class="font-bold text-xl mt-2">999</p>
+                <p data-role="service-number" class="font-bold text-xl mt-2">999</p>
                 <span class="badge bg-gray-200 px-2 py-1 rounded-full text-sm">All</span>
             </div>
             <div class="flex space-x-4 items-center mt-4 bg-white">
@@ -59,140 +59,140 @@
                 <button data-action="call" class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
             </div>
         </div>
-        <div class="bg-white shadow rounded p-4 flex flex-col justify-between">
+        <div class ="servie-card bg-white shadow rounded p-4 flex flex-col justify-between">
             <div>
                 <div class="flex justify-between items-center mb-2">
                     <img src="./assets/police.png" class="h-12 w-12 mb-2 bg-[#FFE3E2] p-3 rounded-xl" alt="">
                 <span data-action="heart" class="cursor-pointer"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <h2 class="font-bold">Police Helpline Number</h2>
+                <h2 data-role="service-name" class="font-bold">Police Helpline Number</h2>
                 <p class="text-sm text-[#5C5C5C]">Police</p>
-                <p class="font-bold text-xl mt-2">999</p>
+                <p data-role="service-number" class="font-bold text-xl mt-2">999</p>
                 <span class="badge bg-gray-200 px-2 py-1 rounded-full text-sm">Police</span>
             </div>
             <div class="flex space-x-4 items-center mt-4 bg-white">
-                <button class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button data-action="copy" class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                <button class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button data-action="call" class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
             </div>
         </div>
-        <div class="bg-white shadow rounded p-4 flex flex-col justify-between">
+        <div class="servie-card bg-white shadow rounded p-4 flex flex-col justify-between">
             <div>
                 <div class="flex justify-between items-center mb-2">
                     <img src="./assets/fire-service.png" class="h-12 w-12 mb-2 bg-[#FFE3E2] p-3 rounded-xl" alt="">
                 <span data-action="heart" class="cursor-pointer"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <h2 class="font-bold">Fire Service Number</h2>
+                <h2 data-role="service-name" class="font-bold">Fire Service Number</h2>
                 <p class="text-sm text-[#5C5C5C]">Fire Service</p>
-                <p class="font-bold text-xl mt-2">999</p>
+                <p data-role="service-number" class="font-bold text-xl mt-2">999</p>
                 <span class="badge bg-gray-200 px-2 py-1 rounded-full text-sm">Fire</span>
             </div>
             <div class="flex space-x-4 items-center mt-4 bg-white">
-                <button class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button data-action="copy" class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                <button class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button data-action="call" class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
             </div>
         </div>
-        <div class="bg-white shadow rounded p-4 flex flex-col justify-between">
+        <div class="servie-card bg-white shadow rounded p-4 flex flex-col justify-between">
             <div>
                 <div class="flex justify-between items-center mb-2">
                     <img src="./assets/ambulance.png" class="h-12 w-12 mb-2 bg-[#FFE3E2] p-3 rounded-xl" alt="">
                 <span data-action="heart" class="cursor-pointer"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <h2 class="font-bold">Ambulance Service</h2>
+                <h2 data-role="service-name" class="font-bold">Ambulance Service</h2>
                 <p class="text-sm text-[#5C5C5C]">Ambulance</p>
-                <p class="font-bold text-xl mt-2">1994-999999</p>
+                <p data-role="service-number" class="font-bold text-xl mt-2">1994-999999</p>
                 <span class="badge bg-gray-200 px-2 py-1 rounded-full text-sm">Health</span>
             </div>
             <div class="flex space-x-4 items-center mt-4 bg-white">
-                <button class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button data-action="copy" class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                <button class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button data-action="call" class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
             </div>
         </div>
-        <div class="bg-white shadow rounded p-4 flex flex-col justify-between">
+        <div class="servie-card bg-white shadow rounded p-4 flex flex-col justify-between">
             <div>
                 <div class="flex justify-between items-center mb-2">
                     <img src="./assets/emergency.png" class="h-12 w-12 mb-2 bg-[#FFE3E2] p-3 rounded-xl" alt="">
                 <span data-action="heart" class="cursor-pointer"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <h2 class="font-bold">Women & Child Helpline</h2>
+                <h2 data-role="service-name" class="font-bold">Women & Child Helpline</h2>
                 <p class="text-sm text-[#5C5C5C]">Women & Child Helpline</p>
-                <p class="font-bold text-xl mt-2">109</p>
+                <p data-role="service-number" class="font-bold text-xl mt-2">109</p>
                 <span class="badge bg-gray-200 px-2 py-1 rounded-full text-sm">Help</span>
             </div>
             <div class="flex space-x-4 items-center mt-4 bg-white">
-                <button class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button data-action="copy" class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                <button class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button data-action="call" class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
             </div>
         </div>
-        <div class="bg-white shadow rounded p-4 flex flex-col justify-between">
+        <div class="servie-card bg-white shadow rounded p-4 flex flex-col justify-between">
             <div>
                 <div class="flex justify-between items-center mb-2">
                     <img src="./assets/emergency.png" class="h-12 w-12 mb-2 bg-[#FFE3E2] p-3 rounded-xl" alt="">
                 <span data-action="heart" class="cursor-pointer"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <h2 class="font-bold">Anti-Corruption Helpline</h2>
+                <h2 data-role="service-name" class="font-bold">Anti-Corruption Helpline</h2>
                 <p class="text-sm text-[#5C5C5C]">Anti-Corruption</p>
-                <p class="font-bold text-xl mt-2">106</p>
+                <p data-role="service-number" class="font-bold text-xl mt-2">106</p>
                 <span class="badge bg-gray-200 px-2 py-1 rounded-full text-sm">Govt</span>
             </div>
             <div class="flex space-x-4 items-center mt-4 bg-white">
-                <button class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button data-action="copy" class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                <button class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button data-action="call" class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
             </div>
         </div>
-        <div class="bg-white shadow rounded p-4 flex flex-col justify-between max-w-[436px]">
+        <div class="servie-card bg-white shadow rounded p-4 flex flex-col justify-between max-w-[436px]">
             <div>
                 <div class="flex justify-between items-center mb-2">
                     <img src="./assets/emergency.png" class="h-12 w-12 mb-2 bg-[#FFE3E2] p-3 rounded-xl" alt="">
                 <span data-action="heart" class="cursor-pointer"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <h2 class="font-bold">Electricity Helpline</h2>
+                <h2 data-role="service-name" class="font-bold">Electricity Helpline</h2>
                 <p class="text-sm text-[#5C5C5C]">Electricity Outage</p>
-                <p class="font-bold text-xl mt-2">16216</p>
+                <p data-role="service-number" class="font-bold text-xl mt-2">16216</p>
                 <span class="badge bg-gray-200 px-2 py-1 rounded-full text-sm">Electricity</span>
             </div>
             <div class="flex space-x-4 items-center mt-4 bg-white">
-                <button class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button data-action="copy" class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                <button class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button data-action="call" class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
             </div>
         </div>
-        <div class="bg-white shadow rounded p-4 flex flex-col justify-between">
+        <div class="servie-card bg-white shadow rounded p-4 flex flex-col justify-between">
             <div>
                 <div class="flex justify-between items-center mb-2">
                     <img src="./assets/emergency.png" class="h-12 w-12 mb-2 bg-[#FFE3E2] p-3 rounded-xl" alt="">
                 <span data-action="heart" class="cursor-pointer"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <h2 class="font-bold">Brac Helpline</h2>
+                <h2 data-role="service-name" class="font-bold">Brac Helpline</h2>
                 <p class="text-sm text-[#5C5C5C]">Brac</p>
-                <p class="font-bold text-xl mt-2">16445</p>
+                <p data-role="service-number" class="font-bold text-xl mt-2">16445</p>
                 <span class="badge bg-gray-200 px-2 py-1 rounded-full text-sm">NGO</span>
             </div>
             <div class="flex space-x-4 items-center mt-4 bg-white">
-                <button class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button data-action="copy" class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                <button class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button data-action="call" class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
             </div>
         </div>
-        <div class="bg-white shadow rounded p-4 flex flex-col justify-between">
+        <div class="servie-card bg-white shadow rounded p-4 flex flex-col justify-between">
             <div>
                 <div class="flex justify-between items-center mb-2">
                     <img src="./assets/emergency.png" class="h-12 w-12 mb-2 bg-[#FFE3E2] p-3 rounded-xl" alt="">
                 <span data-action="heart" class="cursor-pointer"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <h2 class="font-bold">Bangladesh Railway Helpline </h2>
+                <h2 data-role="service-name" class="font-bold">Bangladesh Railway Helpline </h2>
                 <p class="text-sm text-[#5C5C5C]">Bangladesh Railway</p>
-                <p class="font-bold text-xl mt-2">163</p>
+                <p data-role="service-number" class="font-bold text-xl mt-2">163</p>
                 <span class="badge bg-gray-200 px-2 py-1 rounded-full text-sm">Travel</span>
             </div>
             <div class="flex space-x-4 items-center mt-4 bg-white">
-                <button class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button data-action="copy" class="btn px-14 py-1 text-sm rounded-lg flex items-center space-x-1 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                <button class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+                <button data-action="call" class="btn  px-14 py-1 rounded-lg flex items-center space-x-1 bg-[#00A63E] text-white"><span><i class="fa-solid fa-phone"></i></span>Call</button>
             </div>
         </div>
      </div>
